@@ -1,5 +1,5 @@
 # bazo_client-android
-This repository stores and documents the port of the bazo miner and client to the android platform
+This repository stores and documents the port of the bazo miner and client to the android platform.
 
 ## Prerequisites
 In order to build the binaries for the android platform one needs to have the arm compiler for the android platform. The following sections give instructions on how to build the compiler for android and how to cross-compile the bazo binaries.
@@ -22,4 +22,16 @@ In order to run the compiled binaries on a compatible arm-device running android
 * Copy the files to a rooted android phone and run them directly
 
 * Place the binaries in the assets folder of an android application. At runtime, let the application copy the files to `/data/<app>` and run them.
+
+## Running the binaries
+
+Run the binaries as usual. E.g:
+
+`./bazo_miner db :8000 &`
+
+`./bazo_client &`
+
+If the binaries are required for running the Bazo Wallet or other applications that depend on a secure context, a secure tunnel is necessary. Use the supplied ngrok binary:
+
+`./ngrok http 8001`
 
