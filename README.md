@@ -31,7 +31,7 @@ Run the binaries as usual. E.g:
 
 `./bazo_client &`
 
-If the binaries are required for running the Bazo Wallet or other applications that depend on a secure context, a secure tunnel is necessary. Use the supplied ngrok binary:
+If the binaries are required for running the Bazo Wallet or other applications that depend on a secure context, a secure tunnel is necessary. Use the supplied ngrok binary, this can even be run from an android terminal such as termux:
 
 `./ngrok http 8001`
 
